@@ -1,0 +1,18 @@
+<!-- Button to go to the add student page-->
+<a class="btn btn-dark btn-sm" href="/addStudent">Add Student</a>
+<table><!-- Create table-->
+    <tr>
+    <th>Student ID</th>
+    <th>Name</th>
+    <th>GPA</th>
+    </tr>
+    <% students.forEach((student) => { %><!-- Itterates through the students in the database's table to assign the below values to every student -->
+    <tr>
+    <td><%= student.sid %></td>
+    <td><%= student.name %></td>
+    <td><%= student.gpa %></td>
+    </tr>
+    <% }) %>
+    </table>
+
+    <a href="/">Home</a><!-- home link-->
